@@ -1,5 +1,18 @@
 <h1><%= @cocktail.name %></h1>
 
 
-<%= link_to "Back to all Cocktails", cocktails_path %>
-rails generate controller doses index show new edit create update destroy
+
+  <p>
+    <strong>
+      Doses:
+    </strong>
+  </p>
+  <% @cocktail.doses.each do |dose| %>
+  <p><%= dose.description %></p>
+  <p><%= dose.ingredient.name %></p>
+  <p><%= link_to 'Delete description', dose_path(dose.id), method: :delete %></p>
+  <hr>
+  <% end %>
+
+  <%= link_to 'Add a dose', new_cocktail_dose_path(@cocktail) %>
+  <%= link_to "Back to all Cocktails", cocktails_path %>
