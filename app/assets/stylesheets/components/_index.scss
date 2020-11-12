@@ -2,3 +2,15 @@
 @import "alert";
 @import "avatar";
 @import "navbar";
+@import "card";
+
+a{
+text-decoration: none;
+color:red;
+}
+
+a:hover, a:active {
+ opacity: 0.8;
+ color:white;
+ text-decoration: none;
+}
