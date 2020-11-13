@@ -3,6 +3,8 @@
 @import "avatar";
 @import "navbar";
 @import "card";
+@import "banner";
+@import "button";
 
 a{
 text-decoration: none;
@@ -17,4 +19,21 @@ a:hover, a:active {
 
 .site-links{
   color:black;
+}
+
+
+body{
+  font-family: 'Roboto Mono', monospace;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+
+.center-div-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#subline-home {
+margin-top: 20px;
 }
