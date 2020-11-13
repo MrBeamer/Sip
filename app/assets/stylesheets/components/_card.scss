@@ -1,4 +1,9 @@
-.card-category {
+
+.box{
+margin-top: 20px;
+}
+
+.card {
   background-size: cover;
   background-position: center;
   height: 180px;
@@ -17,12 +22,11 @@
 
 .cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
   position: relative;
   z-index: 20;
 }
-
 
 
 .fa-times {
@@ -32,6 +36,7 @@
   width: 200px;
   z-index: 100;
   color: white;
+  font-size: 14px;
 }
 
 .fa-times:hover, .fa-times:active {
@@ -43,10 +48,6 @@ color: white;
 font-weight: lighter;
 }
 
-
-// .column {
-//   float: left;
-// }
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
