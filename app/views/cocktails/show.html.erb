@@ -1,18 +1,25 @@
-<h1><%= @cocktail.name %></h1>
-
-
+<div class="detail-box" >
+  <% if @cocktail.photo.attached? %>
+    <%= cl_image_tag @cocktail.photo.key, crop: :fill,  class: "detail-image" %>
+    <% else %>
+    <%= image_tag "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",  class: "test"%>
+    <% end %>
+</div>
 
   <p>
     <strong>
-      Doses:
+       <h1> <%= @cocktail.name %> Cocktail Recipe: </h1>
     </strong>
   </p>
   <% @cocktail.doses.each do |dose| %>
-  <p><%= dose.description %></p>
-  <p><%= dose.ingredient.name %></p>
-  <p><%= link_to 'Delete description', dose_path(dose.id), method: :delete %></p>
+    <ul>
+      <li><%= dose.ingredient.name %> - <%= dose.description %> - <%= link_to 'Delete', dose_path(dose.id), method: :delete %>
+
+      </li>
+    </ul>
   <hr>
   <% end %>
 
-  <%= link_to 'Add a dose', new_cocktail_dose_path(@cocktail) %>
+  <%= link_to 'Add a dose', new_cocktail_dose_path(@cocktail) %> <br>
   <%= link_to "Back to all Cocktails", cocktails_path %>
+

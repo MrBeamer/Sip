@@ -1,3 +1,15 @@
+
+<!-- Side navigation -->
+<div class="sidenav">
+  <h1>Sip</h1>
+  <%= link_to "Home", root_path%>
+  <a href="">Search</a>
+  <%= link_to "Add", new_cocktail_path%>
+  <%= link_to "Edit", new_cocktail_path%>
+  <%= link_to "Delete", new_cocktail_path%>
+</div>
+
+<div class="main">
 <!-- card section -->
 <% @cocktails.each do |cocktail| %>
 <div class="cards">
@@ -6,6 +18,4 @@
   </div>
 </div>
 <% end %>
-<%= link_to "Create a new Cocktail", new_cocktail_path%>
-
-
+</div>
