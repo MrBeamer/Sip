@@ -24,10 +24,12 @@ gem 'jbuilder', '~> 2.7'
 
 # added gems by me
 gem 'autoprefixer-rails'
+gem 'dotenv-rails', groups: [:development, :test]
 gem 'font-awesome-sass', '~> 5.12.0'
 gem 'rails-controller-testing', group: [ :test ]
 gem 'rspec-rails', '4.0.0.beta3', group: [ :test ]
 gem 'simple_form'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
