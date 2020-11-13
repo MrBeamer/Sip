@@ -5,7 +5,6 @@
    <%= simple_form_for(@cocktail) do |f| %>
   <%= f.input :name %>
   <%= f.input :photo, as: :file %>
-  <%= f.input :photo_cache, as: :hidden %> <!-- delete if broken -->
   <%= f.submit class: "btn-form" %>
   <% end %>
   <div class="link-to">

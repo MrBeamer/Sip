@@ -19,6 +19,23 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 16px;
+  position: relative;
+  z-index: 20;
+}
+
+
+
+.fa-times {
+  position: absolute;
+  right: 670px;
+  top: 10px;
+  width: 200px;
+  z-index: 100;
+  color: white;
+}
+
+.fa-times:hover, .fa-times:active {
+
 }
 
 .cards a {
