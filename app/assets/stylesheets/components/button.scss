@@ -46,3 +46,26 @@ opacity: 1;
 color: #999999;
 border: 1px solid #999999;
 }
+
+
+// detail button add a dose
+.btn-deatail{
+background-color: transparent;
+font-family: Open-sans, sans-serif;
+border: 1px solid black;
+color: black;
+border-radius: 5px;
+padding: 14px 32px;
+font-weight: lighter;
+
+text-align: center;
+display: inline-block;
+margin-bottom: 30px;
+margin-top: 20px;
+}
+
+.btn-deatail:hover{
+opacity: 1;
+color: #999999;
+border: 1px solid #999999;
+}
