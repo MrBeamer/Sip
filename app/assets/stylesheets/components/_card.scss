@@ -1,12 +1,8 @@
 
-.box{
-margin-top: 20px;
-}
-
 .card {
   background-size: cover;
   background-position: center;
-  height: 180px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,8 +12,7 @@ margin-top: 20px;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  margin-bottom: 20px;
-  flex-wrap: wrap;
+  margin-bottom: 16px;
 }
 
 .cards {
@@ -31,7 +26,7 @@ margin-top: 20px;
 
 .fa-times {
   position: absolute;
-  right: 670px;
+  right: -180px;
   top: 10px;
   width: 200px;
   z-index: 100;
@@ -47,6 +42,8 @@ margin-top: 20px;
 color: white;
 font-weight: lighter;
 }
+
+
 
 
 // Smallest device
