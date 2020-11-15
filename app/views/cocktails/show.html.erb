@@ -2,10 +2,10 @@
 
 <div class="detail-box" >
   <% if @cocktail.photo.attached? %>
-    <%= cl_image_tag @cocktail.photo.key, width: 400, height: 450, crop: :limit,  class: "detail-image"%>
+    <%= cl_image_tag @cocktail.photo.key, height: 450, crop: :limit,  class: "detail-image"%>
     <% else %>
     <div>
-      <%= image_tag "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",  class: "detail-image-placeholder"%>
+      <%= image_tag "https://images.unsplash.com/photo-1570204865352-934c744d682c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",  class: "detail-image-placeholder"%>
     </div>
     <% end %>
 </div>
