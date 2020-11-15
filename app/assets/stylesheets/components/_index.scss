@@ -10,11 +10,12 @@
 a{
 text-decoration: none;
 color:black;
+font-weight: normal;
 }
 
 a:hover, a:active {
  opacity: 0.8;
- color:white;
+ color: #999999;
  text-decoration: none;
 }
 
@@ -43,26 +44,11 @@ margin-top: 20px;
 }
 
 
-#form-cocktail {
-margin-top: 200px;
-background-color: #121212;
-color: white;
-width: 50%;
-margin: 0 auto;
-border-radius: 5px;
-padding: 30px;
-}
+
 
 
 .link-to a{
   color: white;
-}
-
-#form-box {
-  margin: 100px auto;
-  background-image: url("https://unsplash.com/photos/hQo6Uyo4nBg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 
@@ -97,4 +83,54 @@ max-height: 450px;
   margin-left: auto;
   margin-right: auto;
 }
+
+#dose-list {
+  font-family: Open-sans, sans-serif;
+  list-style: none;
+  font-weight: lighter;
+}
+
+
+.fa-trash-alt {
+font-size: 12px;
+}
+
+
+.link-to-detail {
+
+}
+
+
+// form-scss
+
+  #form-box {
+    margin: 100px auto;
+    background-image: url("https://unsplash.com/photos/hQo6Uyo4nBg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#form-cocktail {
+  margin-top: 200px;
+  background-color: #121212;
+  color: white;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+#form-cocktail h1 {
+  font-family: 'Roboto Mono', monospace !important;
+  margin-bottom: 20px;
+}
+
+#form-cocktail label{
+  margin-bottom: 15px;
+}
+
+#form-cocktail .form-group{
+  margin-bottom: 30px;
+}
+
 

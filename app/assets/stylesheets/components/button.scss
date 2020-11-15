@@ -1,12 +1,12 @@
 // landing page button
 
 .btn-medium{
-font-family: Open-sans, sans-serif;
+font-family: 'Roboto Mono', monospace;
 border: 1px solid white;
 color: white;
 border-radius: 5px;
 padding: 14px 32px;
-font-weight: lighter;
+font-weight: normal;
 margin: 0 10px;
 text-align: center;
 display: inline-block;
@@ -28,17 +28,17 @@ margin-top: 20px;
 
 .btn-form{
 background-color: transparent;
-font-family: Open-sans, sans-serif;
+font-family: 'Roboto Mono', monospace;
 border: 1px solid white;
 color: white;
 border-radius: 5px;
 padding: 14px 32px;
-font-weight: lighter;
+font-weight: normal;
 
 text-align: center;
 display: inline-block;
 margin-bottom: 30px;
-margin-top: 20px;
+margin-top: 10px;
 }
 
 .btn-form:hover{
@@ -51,12 +51,12 @@ border: 1px solid #999999;
 // detail button add a dose
 .btn-deatail{
 background-color: transparent;
-font-family: Open-sans, sans-serif;
+font-family: 'Roboto Mono', monospace;
 border: 1px solid black;
 color: black;
 border-radius: 5px;
 padding: 14px 32px;
-font-weight: lighter;
+font-weight: normal;
 
 text-align: center;
 display: inline-block;

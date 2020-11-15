@@ -17,15 +17,17 @@
   </p>
   <% @cocktail.doses.each do |dose| %>
     <ul>
-      <li><%= dose.ingredient.name %> - <%= dose.description %> - <%= link_to 'Delete', dose_path(dose.id), method: :delete %>
-
+      <li id="dose-list"><%= dose.ingredient.name %> - <%= dose.description %>
+        <%= link_to dose_path(dose.id), method: :delete, data: { confirm: 'Delete this Dose?' } do %>
+        <i class="far fa-trash-alt"></i>
+    <% end %>
       </li>
     </ul>
   <hr>
   <% end %>
 
   <%= link_to 'Add Ingredient and Dose', new_cocktail_dose_path(@cocktail), class: "btn-deatail" %> <br>
-  <%= link_to "Back to all Cocktails", cocktails_path %>
+  <%= link_to "Back to all Cocktails", cocktails_path, class: "link-to-detail" %>
 
 
 </div>
