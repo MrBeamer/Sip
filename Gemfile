@@ -30,6 +30,8 @@ gem 'font-awesome-sass', '~> 5.12.0'
 gem 'rails-controller-testing', group: [ :test ]
 gem 'rspec-rails', '4.0.0.beta3', group: [ :test ]
 gem 'simple_form'
+gem 'devise'
+
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
