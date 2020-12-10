@@ -1,11 +1,15 @@
 class CocktailsController < ApplicationController
   before_action :find_cocktail, only: [:show, :edit, :update, :destroy]
+  skip_before_action :authenticate_user!, only: [:home, :index]
+  skip_after_action :verify_authorized, only: [:home]
+
 
   def home
   end
 
   def index
-    @cocktails = Cocktail.all
+    # @cocktails = Cocktail.all
+    @cocktails = policy_scope(Cocktail).order(created_at: :desc)
   end
 
   def show
@@ -13,6 +17,7 @@ class CocktailsController < ApplicationController
 
   def new
     @cocktail = Cocktail.new
+    authorize @cocktail
   end
 
   def edit
@@ -20,6 +25,7 @@ class CocktailsController < ApplicationController
 
   def create
     @cocktail = Cocktail.new(cocktail_params)
+    authorize @cocktail
     if @cocktail.save
       redirect_to @cocktail, notice: 'Cocktail was successfully created.'
     else
@@ -48,6 +54,7 @@ class CocktailsController < ApplicationController
 
   def find_cocktail
     @cocktail = Cocktail.find(params[:id])
+    authorize @cocktail
   end
 
   def cocktail_params
