@@ -1,0 +1,31 @@
+// form-scss
+
+  #form-box {
+    margin: 100px auto;
+    background-image: url("https://unsplash.com/photos/hQo6Uyo4nBg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#form-cocktail {
+  margin-top: 200px;
+  background-color: #121212;
+  color: white;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+#form-cocktail h1 {
+  font-family: 'Roboto Mono', monospace !important;
+  margin-bottom: 20px;
+}
+
+#form-cocktail label{
+  margin-bottom: 15px;
+}
+
+#form-cocktail .form-group{
+  margin-bottom: 30px;
+}
