@@ -29,3 +29,4 @@ class CocktailPolicy < ApplicationPolicy
     record.user == user
   end
 end
+
