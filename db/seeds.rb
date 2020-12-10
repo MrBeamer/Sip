@@ -7,17 +7,14 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 puts 'Cleaning database now...'
+User.destroy_all
 Ingredient.destroy_all
 puts 'Database clean ✅'
 
-# Ingredient.create(name: "Lemon")
-# Ingredient.create(name: "Ice")
-# Ingredient.create(name: "Mint Leaves")
-# Ingredient.create(name: "Rhum")
-# Ingredient.create(name: "Vodka")
-# Ingredient.create(name: "Tequila")
-# Ingredient.create(name: "Orange Juice")
-# Ingredient.create(name: "Tomato Juice")
+user_one = User.create!(
+  email: 'beamer@gmx.com',
+  password: 'password'
+)
 
 url = "https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list"
 ingredients = JSON.parse(open(url).read)
@@ -31,5 +28,6 @@ Cocktail.create(name: "Blood Mary")
 Cocktail.create(name: "Sex on the Beach")
 Cocktail.create(name: "Pina Colada")
 
+puts "Complete, created #{User.count} users."
 puts "Complete, created #{Ingredient.count} ingredients."
 puts "Complete, created #{Cocktail.count} cocktails."
