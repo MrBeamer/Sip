@@ -12,9 +12,20 @@
 }
 
 /* The navigation menu links */
+#home {
+ padding: 0;
+}
+
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+}
+
+.sidenav p {
+  padding: 6px 8px 6px 16px;
   font-size: 25px;
   color: white;
   display: block;
@@ -38,8 +49,26 @@
   font-family: 'Libre Barcode 39 Extended Text', cursive;
 }
 
+.search-form {
+  width: 110px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
 
-/* footer */
+.sidenav .avatar-square {
+  margin-left: 16px;
+}
+
+// search
+
+.search-button {
+  display: none;
+}
+
+
+
+
+//footer
 
 .footer-links {
   margin-top: 450px;

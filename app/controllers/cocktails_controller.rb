@@ -3,13 +3,15 @@ class CocktailsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:home, :index]
   skip_after_action :verify_authorized, only: [:home]
 
-
   def home
   end
 
   def index
     # @cocktails = Cocktail.all
     @cocktails = policy_scope(Cocktail).order(created_at: :desc)
+    if params[:query].present?
+      @cocktails = Cocktail.search_by_name(params[:query])
+    end
   end
 
   def show
