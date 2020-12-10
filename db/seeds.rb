@@ -16,6 +16,11 @@ user_one = User.create!(
   password: 'password'
 )
 
+user_two = User.create!(
+  email: 'tom@gmx.com',
+  password: 'password'
+)
+
 url = "https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list"
 ingredients = JSON.parse(open(url).read)
 ingredients["drinks"].each do |ingredient|
@@ -23,10 +28,25 @@ ingredients["drinks"].each do |ingredient|
   puts "create #{i.name}"
 end
 
-Cocktail.create(name: "Mojito")
-Cocktail.create(name: "Blood Mary")
-Cocktail.create(name: "Sex on the Beach")
-Cocktail.create(name: "Pina Colada")
+Cocktail.create(
+  name: 'Mojito',
+  user_id: User.first.id
+)
+
+Cocktail.create(
+  name: 'Blood Mary',
+  user_id: User.first.id
+)
+
+Cocktail.create(
+  name: 'Pina Colada',
+  user_id: User.second.id
+)
+
+Cocktail.create(
+  name: 'Sex on the Beach',
+  user_id: User.second.id
+)
 
 puts "Complete, created #{User.count} users."
 puts "Complete, created #{Ingredient.count} ingredients."
