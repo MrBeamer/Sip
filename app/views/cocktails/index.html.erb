@@ -15,7 +15,7 @@
   <!-- test -->
   <% if user_signed_in? %>
         <div>
-          <%= link_to "Profile", "#", class: "d" %>
+          <%= link_to "Profile", profile_path, class: "d" %>
           <%= link_to "Add", new_cocktail_path, class: "d"%>
           <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "d" %>
         </div>
