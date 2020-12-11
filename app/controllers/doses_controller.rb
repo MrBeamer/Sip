@@ -3,11 +3,13 @@ class DosesController < ApplicationController
 
   def new
     @dose = Dose.new
+    authorize @dose
     @ingredients = Ingredient.all
   end
 
   def create
     @dose = Dose.new(doses_params)
+    authorize @dose
     @dose.cocktail = @cocktail
       if @dose.save
         redirect_to cocktail_path(@cocktail), notice: 'Cocktail was successfully created.'

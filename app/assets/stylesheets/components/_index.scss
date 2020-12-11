@@ -1,7 +1,6 @@
 // Import your components CSS files here.
 @import "alert";
 @import "avatar";
-@import "navbar";
 @import "card";
 @import "banner";
 @import "button";
@@ -23,7 +22,8 @@ body{
 
 
 
-
+html, body{min-height:100%;}
+body{height:100vh;}
 
 
 
