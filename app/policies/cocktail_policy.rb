@@ -5,6 +5,10 @@ class CocktailPolicy < ApplicationPolicy
     end
   end
 
+  def profile?
+    return true
+  end
+
   def home?
     return true
   end
@@ -29,4 +33,3 @@ class CocktailPolicy < ApplicationPolicy
     record.user == user
   end
 end
-
