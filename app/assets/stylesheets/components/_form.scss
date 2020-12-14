@@ -26,6 +26,14 @@
 
 // login
 
+.form-size {
+ width: 30%;
+ display: flex;
+ justify-content: center;
+ // align-items: center;
+ margin-top: 50px;
+}
+
 .form-box {
   display: flex;
   margin: 90px 50px;
@@ -91,3 +99,33 @@
   color: white;
   background: #C41A49;
 }
+
+
+
+/* If the screen size is 600px wide or less, then apply this settings */
+@media only screen and (max-width: 600px) {
+
+.form-size {
+  width: 80%;
+}
+
+  h5{
+    display: none;
+  }
+
+  #clock{
+    font-size: 2em;
+    margin: 10px 0;
+  }
+
+  #selection1,
+  #selection2,
+  #selection3 {
+    padding-right: 10px;
+  }
+
+  .btn-default{
+    width: 322px;
+  }
+}
+
