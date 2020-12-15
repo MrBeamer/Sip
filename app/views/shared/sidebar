@@ -1,3 +1,41 @@
+<div class="sidenav">
+  <a  id="home" href="/"><h1>Sip</h1></a>
+  <div class="search-form">
+    <%= form_tag cocktails_path, method: :get do %>
+    <%= text_field_tag :query,
+    params[:query],
+    class: "form-control",
+    placeholder: "Search"
+    %>
+    <%= submit_tag "Search", class: "search-button"%>
+    <% end %>
+  </div>
+  <% if user_signed_in? %>
+        <div>
+          <%= link_to "Profile", profile_path, class: "d" %>
+          <%= link_to "Add", new_cocktail_path, class: "d"%>
+          <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "d" %>
+        </div>
+  <% else %>
+    <p>
+      <%= link_to "Login", new_user_session_path, class: "d" %>
+    </p>
+  <% end %>
+  <div id="footer-box">
+    <div class="footer-links">
+      <a href="https://github.com/MrBeamer" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+    <div class="footer-links">
+      <a href="https://www.instagram.com/theweekendmixologist/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</div>
+
+
+
+css
+
+
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
   // width: 160px; /* Set the width of the sidebar do i need it? */

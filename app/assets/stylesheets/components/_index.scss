@@ -4,13 +4,20 @@
 @import "card";
 @import "banner";
 @import "button";
-@import "sidenav";
+@import "my_navbar";
 @import "form";
 @import "flip_card";
+@import "footer";
+
 
 body{
   font-family: 'Roboto Mono', monospace !important;
   background-color: white !important;
+    // width: 100%;
+    // height: 100%;
+    // margin: 0px;
+    // padding: 0px;
+    // overflow-x: hidden;
 }
 
 .center-div-content {
@@ -22,8 +29,8 @@ body{
 
 
 
-html, body{min-height:100%;}
-body{height:100vh;}
+// html, body{min-height:100%;}
+// body{height:100vh;}
 
 
 

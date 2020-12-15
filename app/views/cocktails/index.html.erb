@@ -1,43 +1,3 @@
-
-<!-- Side navigation -->
-<div class="sidenav">
-  <a  id="home" href="/"><h1>Sip</h1></a>
-  <div class="search-form">
-    <%= form_tag cocktails_path, method: :get do %>
-    <%= text_field_tag :query,
-    params[:query],
-    class: "form-control",
-    placeholder: "Search"
-    %>
-    <%= submit_tag "Search", class: "search-button"%>
-    <% end %>
-  </div>
-  <!-- test -->
-  <% if user_signed_in? %>
-        <div>
-          <%= link_to "Profile", profile_path, class: "d" %>
-          <%= link_to "Add", new_cocktail_path, class: "d"%>
-          <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "d" %>
-        </div>
-  <% else %>
-    <p>
-      <%= link_to "Login", new_user_session_path, class: "d" %>
-      <%= link_to "SignUp", new_user_registration_path, class: "d" %>
-    </p>
-  <% end %>
-      <!-- test end -->
-
-<!-- footer -->
-  <div id="footer-box">
-    <div class="footer-links">
-      <a href="https://github.com/MrBeamer" target="_blank"><i class="fab fa-github"></i></a>
-    </div>
-    <div class="footer-links">
-      <a href="https://www.instagram.com/theweekendmixologist/" target="_blank"><i class="fab fa-instagram"></i></a>
-    </div>
-  </div>
-</div>
-
 <!-- card section -->
 <div class="main">
   <!-- two -->
@@ -55,7 +15,6 @@
     <i class="fas fa-times"></i>
     <% end %>
   </div>
-
 <% end %>
 </div>
 </div>
