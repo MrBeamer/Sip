@@ -16,6 +16,7 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+  <body>
     <div class="page-container">
       <div class="navbar-container">
       </div>
@@ -23,7 +24,6 @@
         <%= yield %>
         <%=  render 'shared/flashes' %>
       </div>
-      <div class="footer-container">
-      </div>
     </div>
+  </body>
 </html>

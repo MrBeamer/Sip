@@ -1,131 +1,138 @@
 // form-scss
 
-#form-cocktail {
-  margin-top: 200px;
-  background-color: #121212;
-  color: white;
-  width: 50%;
-  margin: 0 auto;
-  border-radius: 5px;
-  padding: 30px;
-}
+// #form-cocktail {
+//   margin-top: 200px;
+//   background-color: #121212;
+//   color: white;
+//   width: 50%;
+//   margin: 0 auto;
+//   border-radius: 5px;
+//   padding: 30px;
+// }
 
-#form-cocktail h1 {
-  font-family: 'Roboto Mono', monospace !important;
-  margin-bottom: 20px;
-}
+// #form-cocktail h1 {
+//   font-family: 'Roboto Mono', monospace !important;
+//   margin-bottom: 20px;
+// }
 
-#form-cocktail label{
-  margin-bottom: 15px;
-}
+// #form-cocktail label{
+//   margin-bottom: 15px;
+// }
 
-#form-cocktail .form-group{
-  margin-bottom: 30px;
-}
+// #form-cocktail .form-group{
+//   margin-bottom: 30px;
+// }
 
 
 // login
 
-.form-size {
- width: 30%;
- display: flex;
- justify-content: center;
- // align-items: center;
- margin-top: 50px;
-}
-
-.form-box {
+.form-background {
+  background-color: #AD343E;
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  height: 100vh;
   display: flex;
-  margin: 90px 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-size {
+  width: 25%;
+  display: flex;
+  // justify-content: center;
   background-color: black;
-  border-radius: 5px;
+  opacity: 0.6;
   color: white;
-  max-height: 491px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-bottom: 0;
 }
 
-.form-box textarea {
-}
-
-.form-box input {
-  margin-bottom: 30px;
-}
-
-#form-headline {
-  font-size: 10 !important;
-}
-
-.form-stuff {
-  width: 50%;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 40px;
-}
-
-.form-image {
-  width: 50%;
-  border-radius: 5px 0px 0px 5px;
-}
-
-.form-text h1 {
-  font-size: 26px;
-  margin-bottom: 30px;
-  color: white;
-}
-
-.form-text a {
-  color: white;
-}
-
-.form-image img {
+form {
   width: 100%;
-  height: 100%;
-  border-radius: 5px 0px 0px 5px;
+}
+
+.form-content {
+  width: 100%;
+}
+
+.form-content input{
+  border-radius: 50px;
+  border-bottom: 1px solid #000000 !important;
+  outline: none;
+}
+
+
+.form-inputs {
+  width: 100%;
+  padding: 25px 15px;
+}
+.form-size input {
+  margin-bottom: 30px;
+}
+
+
+
+.form-inputs h2 {
+  margin-bottom: 25px;
 }
 
 .button-form-all {
-  border: 2px solid #C41A49;
+  border: 2px solid #D26DC4;
   box-sizing: border-box;
-  border-radius: 5px;
-  padding: 5px 40px;
-  color: #C41A49;
+  border-radius: 50px;
+  padding: 5px 10px;
+  color: #D26DC4;
   font-weight: bolder;
   background: white;
   width: 100%;
-  margin-top: 30px;
+}
+
+.form-actions {
+  margin-bottom: 25px;
 }
 
 .button-form-all:hover {
   text-decoration: none;
   color: white;
-  background: #C41A49;
+  background: #D26DC4;
 }
+
 
 
 
 /* If the screen size is 600px wide or less, then apply this settings */
 @media only screen and (max-width: 600px) {
 
+// .form-size {
+//   width: 80%;
+// }
+
+// .form-content {
+//   width: 100%;
+// }
+
+
+}
+
+/* If the screen size is 600px wide or less, then apply this settings */
+@media only screen and (max-width: 767px) {
+
+
 .form-size {
   width: 80%;
 }
 
-  h5{
-    display: none;
-  }
 
-  #clock{
-    font-size: 2em;
-    margin: 10px 0;
-  }
+}
 
-  #selection1,
-  #selection2,
-  #selection3 {
-    padding-right: 10px;
-  }
+@media only screen and (width: 768px) {
 
-  .btn-default{
-    width: 322px;
-  }
+
+.form-size {
+  width: 40%;
+  margin-top: 50px;
+}
 }
 
