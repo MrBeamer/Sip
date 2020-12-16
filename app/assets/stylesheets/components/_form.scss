@@ -18,7 +18,7 @@
   background-color: black;
   opacity: 0.8;
   color: white;
-  border-radius: 30px;
+  border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   margin-bottom: 0;
 }
@@ -40,7 +40,13 @@ form {
 }
 
 .form-content input{
-  border-radius: 50px;
+  border-radius: 5px;
+  border-bottom: 1px solid #000000 !important;
+  outline: none;
+}
+
+.form-content select{
+  border-radius: 5px;
   border-bottom: 1px solid #000000 !important;
   outline: none;
 }
@@ -50,36 +56,78 @@ form {
   width: 100%;
   padding: 25px 15px;
 }
+
 .form-size input {
   margin-bottom: 30px;
+}
+
+.form-size select {
+  margin-bottom: 30px;
+}
+
+.form-size .form-control-file {
+  border-radius: 5px;
 }
 
 .form-inputs h2 {
   margin-bottom: 25px;
 }
 
-.button-form-all {
-  border: 2px solid #FFC659;
+// photo upload soluton make invisibl and change label to button
+
+input[type='file'] {
+  opacity:0
+}
+
+.special-photo-button label {
   box-sizing: border-box;
-  border-radius: 50px;
+  font-family: 'Roboto Mono', monospace;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
   padding: 5px 10px;
-  color: #FFC659;
-  font-weight: bolder;
-  background: white;
+  font-weight: normal;
+  text-align: center;
+  display: inline-block;
   width: 100%;
 }
+
+.special-photo-button:hover label {
+  text-decoration: none;
+  color: black;
+  background: white;
+  opacity: 1;
+}
+
+// button
 
 .form-actions {
   margin-bottom: 25px;
   padding: 0 50px;
 }
 
-.button-form-all:hover {
-  text-decoration: none;
+.button-form-all {
+  background-color: transparent;
+  font-family: 'Roboto Mono', monospace;
+  border: 1px solid white;
   color: white;
-  background: #FFC659;
+  border-radius: 5px;
+  // padding: 14px 32px;
+  font-weight: normal;
+  text-align: center;
+  display: inline-block;
+
+  box-sizing: border-box;
+  padding: 5px 10px;
+  width: 100%;
 }
 
+.button-form-all:hover {
+  text-decoration: none;
+  color: black;
+  background: white;
+  opacity: 1;
+}
 
 
 
