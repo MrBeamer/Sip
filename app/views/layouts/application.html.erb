@@ -19,14 +19,18 @@
   <body>
     <div class="page-container">
       <div class="navbar-container">
-        <%= render "shared/navbar" %>
+        <% unless current_page?(root_path) %>
+          <%= render "shared/navbar" %>
+        <% end %>
       </div>
       <div class="content-container">
         <%= yield %>
         <%=  render 'shared/flashes' %>
       </div>
       <div class="footer-container">
-        <%= render "shared/footer" %>
+        <% unless current_page?(root_path) %>
+          <%= render "shared/footer" %>
+        <% end %>
       </div>
     </div>
   </body>

@@ -26,12 +26,18 @@ body{
   align-items: center;
 }
 
+.content-container {
+  height:100vh;
+}
 
+/* If the screen size is 600px wide or less, then apply this settings */
+@media only screen and (max-width: 600px) {
 
+.content-container {
+height: auto;
+}
 
-// html, body{min-height:100%;}
-// body{height:100vh;}
-
+}
 
 
 

@@ -1,15 +1,5 @@
 
-a{
-text-decoration: none;
-color:black;
-font-weight: normal;
-}
 
-a:hover, a:active {
- opacity: 0.8;
- color: #999999;
- text-decoration: none;
-}
 
 .site-links{
   color:black;
@@ -19,3 +9,12 @@ a:hover, a:active {
   color: white;
 }
 
+
+.main-overflow {
+  overflow-x: hidden;
+}
+
+.main-overflow .cards {
+  margin: 25px;
+  margin-bottom: 16px;
+}
