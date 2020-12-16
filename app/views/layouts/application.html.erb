@@ -16,8 +16,22 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
-    <%= yield %>
+    <div class="page-container">
+      <div class="navbar-container">
+        <% unless current_page?(root_path) %>
+          <%= render "shared/navbar" %>
+        <% end %>
+      </div>
+      <div class="content-container">
+        <%= yield %>
+        <%=  render 'shared/flashes' %>
+      </div>
+      <div class="footer-container">
+        <% unless current_page?(root_path) %>
+          <%= render "shared/footer" %>
+        <% end %>
+      </div>
+    </div>
   </body>
 </html>
