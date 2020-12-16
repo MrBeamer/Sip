@@ -7,6 +7,7 @@
   padding-bottom: 20px;
   padding-left: 20px;
   display: flex;
+  padding-right: 0px;
 }
 
 #detail-h1 {
@@ -20,7 +21,7 @@
 #detail-h3 {
   font-family: 'Raleway Dots', cursive;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  margin-left: 20px;
+  margin-left: 25px;
 }
 
 .detail-image-placeholder {
@@ -31,12 +32,13 @@
 
 .detail-image {
 // width: 50%;
-  max-width: 100%;
+  // max-width: 100%;
+  max-width: 253px;
   margin-top: 20px;
   max-height: 450px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
   border-radius: 5px;
 }
 
@@ -85,6 +87,15 @@
   display: flex;
   flex-direction: column;
 }
+
+.detail-image {
+  max-width: 100%;
+}
+
+.detail-box {
+padding-right: 20px;
+}
+
 }
 
 

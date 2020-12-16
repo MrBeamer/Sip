@@ -1,6 +1,6 @@
 <div class="show container-sm">
 
-<div class="detail-box " >
+<div class="detail-box" >
   <% if @cocktail.photo.attached? %>
     <%= cl_image_tag @cocktail.photo.key, height: 450, crop: :limit,  class: "detail-image img-fluid"%>
     <% else %>
