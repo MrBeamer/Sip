@@ -12,10 +12,13 @@
         <%= link_to "Profile", profile_path, class: "nav-link"%>
       </li>
       <li class="nav-item">
+        <%= link_to "Cocktails", cocktails_path, class: "nav-link"%>
+      </li>
+      <li class="nav-item">
         <%= link_to "Add", new_cocktail_path, class: "nav-link"%>
       </li>
       <li class="nav-item">
-        <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link disabled" %>
+        <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link" %>
       </li>
       <% else %>
       <li class="nav-item">
@@ -31,7 +34,7 @@
     <%= text_field_tag :query,
     params[:query],
     class: "form-control mr-sm-2",
-    placeholder: "Search"
+    placeholder: "Search for a Cocktail"
     %>
     <%= submit_tag "Search", class: "btn btn-outline-info my-2 my-sm-0"%>
     <% end %>
