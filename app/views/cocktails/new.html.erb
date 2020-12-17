@@ -1,18 +1,18 @@
 <div class="form-background " style="background-image:  url(https://www.prachachat.net/wp-content/uploads/2019/07/1-39-1024x683.jpg);">
-<div class="container-sm form-size">
-<div class="form-content">
-  <%= simple_form_for(@cocktail) do |f| %>
-  <div class="form-inputs">
-  <h2>Add Cocktail</h2>
-  <%= f.input :name %>
-  <div class="special-photo-button">
-      <%= f.input :photo, as: :file, label: "Upload Image" %>
+  <div class="container-sm form-size">
+    <div class="form-content">
+      <%= simple_form_for(@cocktail) do |f| %>
+        <div class="form-inputs">
+          <h2>Add Cocktail</h2>
+          <%= f.input :name %>
+          <div class="special-photo-button">
+            <%= f.input :photo, as: :file, label: "Upload Image" %>
+          </div>
+          <div class="form-actions">
+            <%= f.submit "Add Cocktail", class: "button-form-all"%>
+          </div>
+      <% end %>
+        </div>
+    </div>
   </div>
-  <div class="form-actions">
- <%= f.submit "Add Cocktail", class: "button-form-all"%>
- </div>
- <% end %>
-</div>
-</div>
-</div>
 </div>

@@ -1,5 +1,4 @@
 // Sign Up
-
 .form-background {
   background-color: #AD343E;
   background-size: cover;
@@ -49,7 +48,6 @@ form {
   outline: none;
 }
 
-
 .form-inputs {
   width: 100%;
   padding: 25px 15px;
@@ -72,7 +70,6 @@ form {
 }
 
 // photo upload soluton make invisibl and change label to button
-
 input[type='file'] {
   opacity:0
 }
@@ -98,7 +95,6 @@ input[type='file'] {
 }
 
 // button
-
 .form-actions {
   margin-bottom: 25px;
   padding: 0 50px;
@@ -126,7 +122,6 @@ input[type='file'] {
   opacity: 1;
 }
 
-
 /* If the screen size is 600px wide or less, then apply this settings */
 @media only screen and (max-width: 767px) {
 
@@ -142,4 +137,3 @@ input[type='file'] {
   margin-top: 50px;
 }
 }
-
