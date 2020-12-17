@@ -12,7 +12,7 @@ class DosesController < ApplicationController
     authorize @dose
     @dose.cocktail = @cocktail
       if @dose.save
-        redirect_to cocktail_path(@cocktail), notice: 'Cocktail was successfully created.'
+        redirect_to cocktail_path(@cocktail), notice: 'Ingredient and Dose were successfully added.'
       else
         render :new
       end

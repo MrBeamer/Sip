@@ -5,6 +5,10 @@
   <%= f.error_notification %>
   <div class="form-inputs">
      <h2>Sign up</h2>
+    <%= f.input :username,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "username" }%>
     <%= f.input :email,
                 required: true,
                 autofocus: true,
@@ -24,8 +28,3 @@
 </div>
 </div>
 </div>
-
-
-<!-- linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
- -->
-

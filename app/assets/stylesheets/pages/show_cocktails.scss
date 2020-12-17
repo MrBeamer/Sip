@@ -10,18 +10,31 @@
   padding-right: 0px;
 }
 
+
+
 #detail-h1 {
-  font-family: 'Raleway Dots', cursive;
-  margin-bottom: 15px;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-family: 'Roboto Mono', monospace;
+  font-weight: lighter !important;
+  margin-bottom: 10px;  //  or 15px
+  margin-left: 20px;
+}
+
+#last-h1 {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: lighter !important;
+  margin-bottom: 30px;  //  or 15px
   margin-left: 20px;
 }
 
 
 #detail-h3 {
-  font-family: 'Raleway Dots', cursive;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-family: 'Roboto Mono', monospace;
+  font-weight: lighter !important;
   margin-left: 25px;
+}
+
+.ingredient-box .fas, .far {
+  margin-left: 18px;
 }
 
 .detail-image-placeholder {
@@ -43,7 +56,7 @@
 }
 
 #dose-list {
-  font-family: Open-sans, sans-serif;
+  font-family: 'Roboto Mono', monospace;
   list-style: none;
   font-weight: lighter;
 }
@@ -86,6 +99,8 @@
   width: 80%;
   display: flex;
   flex-direction: column;
+  padding-left: 27px;
+  padding-right: 10px;
 }
 
 .detail-image {
@@ -94,6 +109,19 @@
 
 .detail-box {
 padding-right: 20px;
+}
+
+#detail-h1 {
+  margin-left: 0px;
+}
+
+#last-h1 {
+  margin-left: 0px;
+}
+
+
+#detail-h3 {
+  margin-left: 0px;
 }
 
 }
