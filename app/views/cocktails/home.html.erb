@@ -1,10 +1,16 @@
-<!-- banner -->
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1566232889011-6217407c577a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1651&q=80);">
   <div class="container">
     <h1>Sip </h1>
-   <!--  <p id="subline-home">Find your purpose and cocktail</p> -->
     <div class="center-div-content home-button">
-      <a class="btn-medium" href="/cocktails">Start Drinking</a>
+      <a id='button' class="btn-medium" href="/cocktails">Start Drinking</a>
     </div>
   </div>
 </div>
+<script>
+  let button = document.getElementById('button');
+  let audio = new Audio('https://res.cloudinary.com/dxdboxbyb/video/upload/v1608217119/samples/sf_icecubes_01_zkkymv.mp3');
+  let pushButton = () =>{
+  audio.play();
+  }
+  button.onmousedown = pushButton;
+</script>

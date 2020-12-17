@@ -1,29 +1,27 @@
 <div class="show container-sm">
-
-<div class="detail-box" >
-  <% if @cocktail.photo.attached? %>
-    <%= cl_image_tag @cocktail.photo.key, height: 450, crop: :limit,  class: "detail-image img-fluid"%>
+  <div class="detail-box" >
+    <% if @cocktail.photo.attached? %>
+      <%= cl_image_tag @cocktail.photo.key, height: 450, crop: :limit,  class: "detail-image img-fluid"%>
     <% else %>
-    <div>
-      <%= image_tag "https://images.unsplash.com/photo-1570204865352-934c744d682c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",  class: "detail-image-placeholder img-fluid"%>
-    </div>
+      <div>
+        <%= image_tag "https://images.unsplash.com/photo-1570204865352-934c744d682c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",  class: "detail-image-placeholder img-fluid"%>
+      </div>
     <% end %>
-</div>
-
-<div class="ingredient-box">
-  <p>
+  </div>
+  <div class="ingredient-box">
+    <p>
       <h1 id="detail-h1"> <%= @cocktail.name %> </h1>
       <p id="detail-h1"><i class="fas fa-cocktail"></i> Barkeeper: <%= @cocktail.user.username %> </p>
       <p id="last-h1"><i class="far fa-clock"></i> Prep Time: 10 minutes</p>
       <h3 id="detail-h3">Ingredients</h3>
-  </p>
-  <% @cocktail.doses.each do |dose| %>
-    <ul>
-      <li id="dose-list"> <%= dose.description %> <%= dose.ingredient.name %>
-      </li>
-    </ul>
-  <% end %>
+    </p>
+    <% @cocktail.doses.each do |dose| %>
+      <ul>
+        <li id="dose-list"> <%= dose.description %> <%= dose.ingredient.name %>
+        </li>
+      </ul>
+    <% end %>
     <%= link_to 'Add Ingredient', new_cocktail_dose_path(@cocktail), class: "btn-show" %> <br>
-</div>
+  </div>
 </div>
 

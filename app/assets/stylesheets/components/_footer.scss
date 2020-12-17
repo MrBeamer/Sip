@@ -11,6 +11,7 @@
   display: flex;
   align-items: center;
 }
+
 .footer-links a {
   color: white;
   text-decoration: none;
@@ -18,17 +19,18 @@
   padding: 0px 10px;
   font-weight: normal;
 }
+
 .footer-links a:hover {
   opacity: 1;
 }
+
 .footer .fa-heart {
   color: #D23333;
 }
+
 // maybe delete
 .footer a:hover, .footer a:active {
  opacity: 0.8;
  color: #999999;
  text-decoration: none;
 }
-
-

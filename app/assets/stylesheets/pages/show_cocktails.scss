@@ -10,8 +10,6 @@
   padding-right: 0px;
 }
 
-
-
 #detail-h1 {
   font-family: 'Roboto Mono', monospace;
   font-weight: lighter !important;
@@ -25,7 +23,6 @@
   margin-bottom: 30px;  //  or 15px
   margin-left: 20px;
 }
-
 
 #detail-h3 {
   font-family: 'Roboto Mono', monospace;
@@ -44,14 +41,10 @@
 }
 
 .detail-image {
-// width: 50%;
-  // max-width: 100%;
   max-width: 253px;
   margin-top: 20px;
   max-height: 450px;
   display: block;
-  // margin-left: auto;
-  // margin-right: auto;
   border-radius: 5px;
 }
 
@@ -91,9 +84,7 @@
   text-decoration: none;
 }
 
-
 @media only screen and (max-width: 767px) {
-
 
 .show {
   width: 80%;
@@ -125,5 +116,3 @@ padding-right: 20px;
 }
 
 }
-
-
