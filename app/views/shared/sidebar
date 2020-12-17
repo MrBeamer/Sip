@@ -118,3 +118,29 @@ css
 #footer-box {
   display: flex;
 }
+
+
+
+other stuff
+
+
+        <%= link_to dose_path(dose.id), method: :delete, data: { confirm: 'Delete this Dose?' } do %>
+        <i class="far fa-trash-alt"></i>
+    <% end %>
+
+      font-family: 'Raleway Dots', cursive;
+
+
+
+
+           <div class="form-inline my-2 my-lg-0 margin-left-fix">
+    <%= form_tag cocktails_path, method: :get do %>
+    <%= text_field_tag :query,
+    params[:query],
+    class: "form-control mr-sm-2",
+    placeholder: "Search for a Cocktail"
+    %>
+    <%= submit_tag "Search", class: "btn btn-outline-info my-2 my-sm-0"%>
+    <% end %>
+  </div>
+

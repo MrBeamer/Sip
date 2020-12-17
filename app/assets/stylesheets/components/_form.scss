@@ -41,13 +41,11 @@ form {
 
 .form-content input{
   border-radius: 5px;
-  border-bottom: 1px solid #000000 !important;
   outline: none;
 }
 
 .form-content select{
   border-radius: 5px;
-  border-bottom: 1px solid #000000 !important;
   outline: none;
 }
 
@@ -112,7 +110,6 @@ input[type='file'] {
   border: 1px solid white;
   color: white;
   border-radius: 5px;
-  // padding: 14px 32px;
   font-weight: normal;
   text-align: center;
   display: inline-block;
@@ -130,34 +127,15 @@ input[type='file'] {
 }
 
 
-
-/* If the screen size is 600px wide or less, then apply this settings */
-@media only screen and (max-width: 600px) {
-
-// .form-size {
-//   width: 80%;
-// }
-
-// .form-content {
-//   width: 100%;
-// }
-
-
-}
-
 /* If the screen size is 600px wide or less, then apply this settings */
 @media only screen and (max-width: 767px) {
-
 
 .form-size {
   width: 80%;
 }
-
-
 }
 
 @media only screen and (width: 768px) {
-
 
 .form-size {
   width: 40%;

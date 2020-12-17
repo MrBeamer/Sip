@@ -13,11 +13,13 @@ Ingredient.destroy_all
 puts 'Database clean ✅'
 
 user_one = User.create!(
+  username: "Link",
   email: 'beamer@gmx.com',
   password: 'password'
 )
 
 user_two = User.create!(
+  username: "Zelda",
   email: 'tom@gmx.com',
   password: 'password'
 )
@@ -71,6 +73,76 @@ margarita = Cocktail.create(
 )
 margarita.photo.attach(io: file, filename: 'margarita.jpg', content_type: 'image/jpg')
 
+# ingredients name
+ingredient_one = Ingredient.create!(
+  name: "Delicous triple sec"
+)
+
+ingredient_two = Ingredient.create!(
+  name: "Good tequila"
+)
+
+ingredient_three = Ingredient.create!(
+  name: "Fresh lemon juice"
+)
+
+ingredient_four = Ingredient.create!(
+  name: "Simple syrup"
+)
+
+ingredient_five = Ingredient.create!(
+  name: "Basil leaves for garnish"
+)
+
+ingredient_six = Ingredient.create!(
+  name: "Sugar mixture for rim"
+)
+
+# doses description
+
+dose_1 = Dose.create!(
+  description: "1.5 oz",
+  # missing user_id: User.second.id,
+  cocktail_id: Cocktail.third.id,
+  ingredient_id: Ingredient.first.id
+)
+
+dose_2 = Dose.create!(
+  description: "1 oz",
+  # missing user_id: User.second.id,
+  cocktail_id: Cocktail.third.id,
+  ingredient_id: Ingredient.second.id
+)
+
+dose_3 = Dose.create!(
+  description: "1 oz",
+  # missing user_id: User.second.id,
+  cocktail_id: Cocktail.third.id,
+  ingredient_id: Ingredient.third.id
+)
+
+dose_4 = Dose.create!(
+  description: "5 oz",
+  # missing user_id: User.second.id,
+  cocktail_id: Cocktail.third.id,
+  ingredient_id: Ingredient.fourth.id
+)
+
+dose_5 = Dose.create!(
+  description: "3",
+  # missing user_id: User.second.id,
+  cocktail_id: Cocktail.third.id,
+  ingredient_id: Ingredient.fifth.id
+)
+
+dose_6 = Dose.create!(
+  description: "½",
+  # missing user_id: User.second.id,
+  cocktail_id: Cocktail.third.id,
+  ingredient_id: Ingredient.last.id
+)
+
 puts "Complete, created #{User.count} users."
 puts "Complete, created #{Ingredient.count} ingredients."
 puts "Complete, created #{Cocktail.count} cocktails."
+puts "Complete, created #{Dose.count} doses."
