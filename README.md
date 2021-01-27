@@ -1,24 +1,38 @@
-# README
+![](https://res.cloudinary.com/dxdboxbyb/image/upload/v1611263084/portfolio/uhwj1vug0scc6q6p0gv5.png)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+---
 
-Things you may want to cover:
+## General info
 
-* Ruby version
+Sip - Share your favorite cocktail recipes
+Register and login
+Upload pictures
+Create, Delete or Edit recipes.
 
-* System dependencies
+---
 
-* Configuration
+## Live Preview
 
-* Database creation
+https://siplicious.herokuapp.com/
 
-* Database initialization
+---
 
-* How to run the test suite
+## Technologies
 
-* Services (job queues, cache servers, search engines, etc.)
+Project is created with:
 
-* Deployment instructions
+- **JavaScript**
+- **Ruby on Rails**
 
-* ...
+- **PG search'** to make precise searches on the site
+- **PG** postgresql as the database for Active Record
+- **Puma** for the app server
+- **Sass-Rails** to use SCSS for stylesheets
+- **Bootstrap** for styling and positioning
+- **Font-awesome** adding icons
+- **Webpack** as JavaScript module bundler
+- **Devise** for authentication
+- **Pundit** for authorization
+- **Cloudinary** for image uploads
+- **Yarn** as package manager
+- **Simple Form** for user input
