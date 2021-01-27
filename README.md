@@ -4,9 +4,9 @@
 
 ## General info
 
-Sip - Share your favorite cocktail recipes
-Register and login
-Upload pictures
+Sip - Share your favorite cocktail recipes <br/>
+Register and login <br/>
+Upload pictures <br/>
 Create, Delete or Edit recipes.
 
 ---
