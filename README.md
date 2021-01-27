@@ -1,7 +1,3 @@
-![](https://res.cloudinary.com/dxdboxbyb/image/upload/v1611263084/portfolio/uhwj1vug0scc6q6p0gv5.png)
-
----
-
 ## General info
 
 Share your favorite cocktail recipes <br/>
